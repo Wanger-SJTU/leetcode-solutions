@@ -7,7 +7,7 @@
 # Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
 
-class lengthOfLongestSubstring(object):
+class LengthOfLongestSubstring(object):
   
   def lengthOfLongestSubstring(self, s):
     """
@@ -43,11 +43,10 @@ class lengthOfLongestSubstring(object):
     return lengthOfLongestSubstring(s)
   def _unique(self, s, start, end):
     set_char = set(list(s))
-
     return True if len(set_char) == len(s) else False
 
 if __name__ == '__main__':
-  s = lengthOfLongestSubstring()
+  s = LengthOfLongestSubstring()
   string = 'abcabacdbb'
   print(s.lengthOfLongestSubstring(string))
   print(s.bruteForce(string))
