@@ -43,11 +43,32 @@ class Solution:
 		else:
 			memo[left][right] = max(self.__shrink(s, left+1, right, memo),\
 															self.__shrink(s, left, right-1, memo))
-		print(memo)
+		# print(memo)
 		return memo[left][right]
+
+	def DP_iter(self, s):
+		lens = len(s)
+		i = j = lens // 2
+		memo = [[0 for i in range(len(s))] for j in range(len(s))]
+		
+		for i in range(lens-1, -1, -1):
+			memo[i][i] = 1
+			for j in range(i+1, lens):
+				if s[i] == s[j]:
+					memo[i][j] = memo[i+1][j-1]+2
+				else:
+					memo[i][j] = max(memo[i][j-1], memo[i+1][j])
+			display(memo)
+		return memo[0][-1]
 
 	def __call__(self, s):
 		return self.longestPalindromeSubseq(s)
+
+def display(arr):
+	print('-'*10)
+	for row in arr:
+		print(row)
+
 if __name__ == '__main__':
 	s = Solution()
-	print(s('ssas'))
+	print(s.DP_iter('ssas'))

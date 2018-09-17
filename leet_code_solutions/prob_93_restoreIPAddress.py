@@ -24,6 +24,7 @@ class Solution(object):
                     else:
                         self.getip(s[i:], k-1, out+s[0:i]+'.', result)
         return result
+        
     def _isValid(self, s):
         if len(s) == 0 or len(s) > 3 or (len(s)>1 and s[0] =='0'):
             return False
