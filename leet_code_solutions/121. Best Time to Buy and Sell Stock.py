@@ -28,6 +28,7 @@ def one_pass(prices):
       min_price = price
     max_reward = max(price - min_price, max_reward)
   return max_reward
+  
 if __name__ == '__main__':
   inputs =  [7,1,5,3,6,4]
   print(BruteForce(inputs))
