@@ -1,5 +1,6 @@
 .ipynb_checkpoints/*
 pack_problem/.ipynb_checkpoints/*
-leet_code_solutions/*.pyc
+leet_code/*.pyc
+leet_code/update.py
 .vscode
 test
