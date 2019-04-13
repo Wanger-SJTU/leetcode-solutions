@@ -10,7 +10,7 @@ class Solution(object):
         
         if num == 1:
             return True
-        
+
         elif num % 2 == 0:
             return self.isUgly(num/2)
         

@@ -8,6 +8,7 @@ def prob1(points):
         if item[0]>max_x:
             print(item)
             max_x = item[0]
+
 if __name__ == "__main__":
     points = [[1,2],[5,3],[4,6],[7,5],[9,0]]
     prob1(points)

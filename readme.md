@@ -5,7 +5,7 @@
 
 ## [LeetCode Solutions](./leet_code/README.md)
 
-leetCode 题目的Python实现
+leetCode 题目的Python实现, [leetcode页面](./leet_code/README.md)
 
 
 ## [背包九讲](./pack_problem/READMED.md)
