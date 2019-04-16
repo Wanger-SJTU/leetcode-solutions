@@ -15,7 +15,6 @@ class Solution:
         return longest
     
     '''
-
     e.g.
      ( ( ) )
 idx  0 1 2 3
