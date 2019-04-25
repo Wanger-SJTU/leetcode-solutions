@@ -1,4 +1,4 @@
-
+from typing import List
 
 def get_median(nums1, nums2):
   nums = []
