@@ -19,7 +19,7 @@ class Solution(object):
             return result
         help(n)
         return d[n]
-    
+
     def numTreesDP(self, n):
         """
         :type n: int
