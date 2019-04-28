@@ -44,8 +44,18 @@ class LengthOfLongestSubstring(object):
     set_char = set(list(s))
     return True if len(set_char) == len(s) else False
 
+class Solution:
+  def lengthOfLongestSubstring(self, s):
+    b, m, d = 0, 0, {}
+    for i, c in enumerate(s): 
+      b, m, d[c] = max(b, d.get(c, -1) + 1), max(m, i - b), i
+    return max(m, len(s) - b)
+
+
+
 if __name__ == '__main__':
   s = LengthOfLongestSubstring()
   string = 'abcabacdbb'
   print(s.lengthOfLongestSubstring(string))
-  print(s.bruteForce(string))
+  print(func(string))
+  #print(s.bruteForce(string))
