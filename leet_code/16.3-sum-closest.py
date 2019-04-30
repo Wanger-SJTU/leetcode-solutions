@@ -8,7 +8,7 @@ class Solution:
         nums.sort()
         result = sum(nums[:3])
         for i in range(len(nums)-2):
-            j,k = i+1,len(nums)-1
+            j,k = i+1, len(nums)-1
             while j < k:
                 res_sum = nums[i]+nums[j]+nums[k]
                 if res_sum == target:
@@ -17,7 +17,7 @@ class Solution:
                     result = res_sum
                 if res_sum < target:
                     j += 1
-                else:
+                elif res_sum > target:
                     k -= 1
-        return res_sum
+        return result
 
