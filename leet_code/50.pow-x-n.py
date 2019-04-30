@@ -10,7 +10,7 @@ class Solution:
         x = 1/x if n < 0 else x
         res, n = 1, abs(n)
         while n:
-            if n&1:
+            if n & 1:
                 res *= x
             x *= x
             n >>= 1
