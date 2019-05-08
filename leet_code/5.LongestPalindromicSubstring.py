@@ -20,7 +20,7 @@ class Solution(object):
 		pass
 	def __DP_method(self, s):
 
-		table = [[False for i in range(len(s))] for j in range(len(s))]
+		table = [[False for _ in range(len(s))] for _ in range(len(s))]
 		sub_str = ""
 		lens = 1
 		while lens < len(s):
@@ -63,7 +63,7 @@ def __expand(self, s, left, right):
 		if _DEBUG:
 			pdb.set_trace()
 		values = {'DP': lambda x: self.__DP_method(x),
-							'Expand':lambda x: self.__expandAroundCenter(x)
+				  'Expand':lambda x: self.__expandAroundCenter(x)
 							}
 		return values[method](s)
 
