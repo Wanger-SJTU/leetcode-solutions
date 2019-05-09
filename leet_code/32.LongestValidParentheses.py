@@ -6,7 +6,7 @@ class Solution:
             if c == '(':
                 stack.append(0)
             else:
-                if len(stack)>1:
+                if len(stack) > 1:
                     val = stack.pop()
                     stack[-1] += (val + 2)
                     longest = max(longest, stack[-1])

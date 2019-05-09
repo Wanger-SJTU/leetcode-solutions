@@ -1,4 +1,8 @@
-
+#
+# @lc app=leetcode id=204 lang=python3
+#
+# [204] Count Primes
+#
 class Solution:
     def countPrimes(self, n: int) -> int:
         if n < 2:
@@ -11,3 +15,4 @@ class Solution:
                 for multiples_of_i in range(i * i, n, i):
                     isPrime[multiples_of_i] = False
         return sum(isPrime)
+

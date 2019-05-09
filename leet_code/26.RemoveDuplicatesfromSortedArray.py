@@ -2,11 +2,10 @@ from typing import List
 def removeDuplicates(nums: List[int]) -> int:
     if len(nums) <=1:
         return  len(nums)
-    idx_i, idx_j = 0,1
+    idx_i, idx_j = 0, 1
     count = len(nums)
     
     while idx_j < len(nums):
-        print(nums[:idx_i])
         while nums[idx_j]==nums[idx_i] and idx_j < len(nums)-1:
             idx_j +=1
         if nums[idx_j]!=nums[idx_i]:
@@ -14,7 +13,6 @@ def removeDuplicates(nums: List[int]) -> int:
             idx_i, idx_j = idx_i+1, idx_j+1
         else:
             idx_j +=1
-    print(nums[:idx_i+1])
     return idx_i+1
 
 if __name__ == "__main__":

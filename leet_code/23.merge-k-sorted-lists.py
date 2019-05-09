@@ -17,7 +17,7 @@ class Solution:
                 result.append(lists[i].val)
                 lists[i]= lists[i].next
         result.sort()
-        head, node =ListNode(0), ListNode(0)
+        head, node = ListNode(0), ListNode(0)
         head = node
         for x in range(len(result)):
             node.next= ListNode(result[x])

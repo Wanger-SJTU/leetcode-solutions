@@ -11,7 +11,7 @@ def  majorityElement_Sorting(nums):
 
 def Randomization(nums):
     majority_count = len(nums)//2
-        while True:
-            candidate = random.choice(nums)
-            if sum(1 for elem in nums if elem == candidate) > majority_count:
-                return candidate
+    while True:
+        candidate = random.choice(nums)
+        if sum(1 for elem in nums if elem == candidate) > majority_count:
+            return candidate
