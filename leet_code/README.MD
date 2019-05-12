@@ -1,5 +1,6 @@
 ### Content 
 solved 80
+
 index|Problems|Solutions
 -----|:-----: |:-----:
 1|two-sum|[python](1.two-sum.py)
