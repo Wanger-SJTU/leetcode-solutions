@@ -1,7 +1,7 @@
 ### Content 
 solved 80
 index|Problems|Solutions
---|--|--
+-----|:-----: |:-----:
 1|two-sum|[python](1.two-sum.py)
 2|Add2Numbers|[python](2.Add2Numbers.py)
 3|LongestSubstringWithoutRepeatingCharacters|[python](3.LongestSubstringWithoutRepeatingCharacters.py)
