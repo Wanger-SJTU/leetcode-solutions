@@ -1,5 +1,5 @@
 ### Content 
-solved 74
+solved 80
 index|Problems|Solutions
 --|--|--
 1|two-sum|[python](1.two-sum.py)
@@ -20,6 +20,7 @@ index|Problems|Solutions
 24|swap-nodes-in-pairs|[python](24.swap-nodes-in-pairs.py)
 26|RemoveDuplicatesfromSortedArray|[python](26.RemoveDuplicatesfromSortedArray.py)
 27|RemoveElement|[python](27.RemoveElement.py)
+28|implement-str-str|[python](28.implement-str-str.py)
 29|divide-two-integers|[python](29.divide-two-integers.py)
 31|next-permutation|[python](31.next-permutation.py)
 32|LongestValidParentheses|[python](32.LongestValidParentheses.py)
@@ -32,16 +33,21 @@ index|Problems|Solutions
 50|pow-x-n|[python](50.pow-x-n.py)
 53|MaximumSubarray|[python](53.MaximumSubarray.py)
 58|length-of-last-word|[python](58.length-of-last-word.py)
-62|UniquePaths|[python](62.UniquePaths.py)
-66|PlusOne|[python](66.PlusOne.py)
+62|unique-paths|[python](62.unique-paths.py)
+66|plus-one|[python](66.plus-one.py)
 67|AddBinary|[python](67.AddBinary.py)
 69|Sqrt(x)|[python](69.Sqrt(x).py)
 70|ClimbingStairs|[python](70.ClimbingStairs.py)
+83|remove-duplicates-from-sorted-list|[python](83.remove-duplicates-from-sorted-list.py)
 88|MergeSortedArray|[python](88.MergeSortedArray.py)
 93|restoreIPAddress|[python](93.restoreIPAddress.py)
-94| Binary Tree Inorder Traversal|[python](94.BinaryTreeInorderTraversal.py)
-95| Unique Binary Search Trees II|[python](95.UniqueBinarySearchTreesII.py)
-96| Unique Binary Search Trees|[python](96.UniqueBinarySearchTrees.py)
+94|BinaryTreeInorderTraversal|[python](94.BinaryTreeInorderTraversal.py)
+95|UniqueBinarySearchTreesII|[python](95.UniqueBinarySearchTreesII.py)
+96|UniqueBinarySearchTrees|[python](96.UniqueBinarySearchTrees.py)
+100|same-tree|[python](100.same-tree.py)
+101|symmetric-tree|[python](101.symmetric-tree.py)
+104|maximum-depth-of-binary-tree|[python](104.maximum-depth-of-binary-tree.py)
+107|binary-tree-level-order-traversal-ii|[python](107.binary-tree-level-order-traversal-ii.py)
 118|Pascal'sTriangle|[python](118.Pascal'sTriangle.py)
 119|Pascal'sTriangleII|[python](119.Pascal'sTriangleII.py)
 121|BestTimetoBuyandSellStock|[python](121.BestTimetoBuyandSellStock.py)
