@@ -1,3 +1,8 @@
+#
+# @lc app=leetcode id=62 lang=python3
+#
+# [62] Unique Paths
+#
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         dp = [[0 for _ in range(n+1)] for _ in range(m+1)]
@@ -10,6 +15,3 @@ class Solution:
                 dp[i][j]= tmp
         return dp[-1][-1]
 
-if __name__ == "__main__":
-    s = Solution()
-    print(s.uniquePaths(3,2))
