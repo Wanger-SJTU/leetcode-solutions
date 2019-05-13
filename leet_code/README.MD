@@ -1,8 +1,8 @@
 ### Content 
-solved 80
+solved 82
 
 index|Problems|Solutions
------|:-----: |:-----:
+--|:--:|:--:
 1|two-sum|[python](1.two-sum.py)
 2|Add2Numbers|[python](2.Add2Numbers.py)
 3|LongestSubstringWithoutRepeatingCharacters|[python](3.LongestSubstringWithoutRepeatingCharacters.py)
@@ -28,8 +28,10 @@ index|Problems|Solutions
 33|search-in-rotated-sorted-array|[python](33.search-in-rotated-sorted-array.py)
 34|find-first-and-last-position-of-element-in-sorted-array|[python](34.find-first-and-last-position-of-element-in-sorted-array.py)
 35|SearchInsertPosition|[python](35.SearchInsertPosition.py)
+36|valid-sudoku|[python](36.valid-sudoku.py)
 38|count-and-say|[python](38.count-and-say.py)
 43|multiply-strings|[python](43.multiply-strings.py)
+44|wildcard-matching|[python](44.wildcard-matching.py)
 48|rotate-image|[python](48.rotate-image.py)
 50|pow-x-n|[python](50.pow-x-n.py)
 53|MaximumSubarray|[python](53.MaximumSubarray.py)
