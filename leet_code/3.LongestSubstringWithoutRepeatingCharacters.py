@@ -8,7 +8,6 @@
 
 
 class LengthOfLongestSubstring(object):
-  
   def lengthOfLongestSubstring(self, s):
     """
     :type s: str
@@ -24,8 +23,6 @@ class LengthOfLongestSubstring(object):
       used[c] = i
     return max_length
  
-
-
   def bruteForce(self, s):
     '''
     This is the implementation to brute force method, but time limited
