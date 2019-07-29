@@ -1,5 +1,5 @@
 ### Content 
-solved 113
+solved 115
 
 index|Problems|Solutions
 --|:--:|:--:
@@ -50,7 +50,9 @@ index|Problems|Solutions
 56|merge-intervals|[python](56.merge-intervals.py)
 57|insert-interval|[python](57.insert-interval.py)
 58|length-of-last-word|[python](58.length-of-last-word.py)
+59|spiral-matrix-ii|[python](59.spiral-matrix-ii.py)
 60|permutation-sequence|[python](60.permutation-sequence.py)
+61|rotate-list|[python](61.rotate-list.py)
 62|unique-paths|[python](62.unique-paths.py)
 66|plus-one|[python](66.plus-one.py)
 67|AddBinary|[python](67.AddBinary.py)
