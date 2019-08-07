@@ -1,5 +1,5 @@
 ### Content 
-solved 115
+solved 117
 
 index|Problems|Solutions
 --|:--:|:--:
@@ -54,6 +54,8 @@ index|Problems|Solutions
 60|permutation-sequence|[python](60.permutation-sequence.py)
 61|rotate-list|[python](61.rotate-list.py)
 62|unique-paths|[python](62.unique-paths.py)
+63|unique-paths-ii|[python](63.unique-paths-ii.py)
+64|minimum-path-sum|[python](64.minimum-path-sum.py)
 66|plus-one|[python](66.plus-one.py)
 67|AddBinary|[python](67.AddBinary.py)
 69|Sqrt(x)|[python](69.Sqrt(x).py)
