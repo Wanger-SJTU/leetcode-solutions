@@ -1,5 +1,5 @@
 ### Content 
-solved 117
+solved 129
 
 index|Problems|Solutions
 --|:--:|:--:
@@ -56,10 +56,19 @@ index|Problems|Solutions
 62|unique-paths|[python](62.unique-paths.py)
 63|unique-paths-ii|[python](63.unique-paths-ii.py)
 64|minimum-path-sum|[python](64.minimum-path-sum.py)
+65|valid-number|[python](65.valid-number.py)
 66|plus-one|[python](66.plus-one.py)
 67|AddBinary|[python](67.AddBinary.py)
+68|text-justification|[python](68.text-justification.py)
 69|Sqrt(x)|[python](69.Sqrt(x).py)
 70|ClimbingStairs|[python](70.ClimbingStairs.py)
+71|simplify-path|[python](71.simplify-path.py)
+72|edit-distance|[python](72.edit-distance.py)
+73|set-matrix-zeroes|[python](73.set-matrix-zeroes.py)
+74|search-a-2-d-matrix|[python](74.search-a-2-d-matrix.py)
+75|sort-colors|[python](75.sort-colors.py)
+76|minimum-window-substring|[python](76.minimum-window-substring.py)
+79|word-search|[python](79.word-search.py)
 83|remove-duplicates-from-sorted-list|[python](83.remove-duplicates-from-sorted-list.py)
 88|MergeSortedArray|[python](88.MergeSortedArray.py)
 93|restoreIPAddress|[python](93.restoreIPAddress.py)
@@ -80,6 +89,7 @@ index|Problems|Solutions
 122|BestTimetoBuyandSellStockII|[python](122.BestTimetoBuyandSellStockII.py)
 125|valid-palindrome|[python](125.valid-palindrome.py)
 131|palindrome-partitioning|[python](131.palindrome-partitioning.py)
+133|clone-graph|[python](133.clone-graph.py)
 136|single-number|[python](136.single-number.py)
 139|word-break|[python](139.word-break.py)
 140|word-break-ii|[python](140.word-break-ii.py)
@@ -93,7 +103,9 @@ index|Problems|Solutions
 189|RotateArray|[python](189.RotateArray.py)
 202|HappyNumber|[python](202.HappyNumber.py)
 204|count-primes|[python](204.count-primes.py)
+207|course-schedule|[python](207.course-schedule.py)
 208|implement-trie-prefix-tree_0|[python](208.implement-trie-prefix-tree_0.py)
+210|course-schedule-ii|[python](210.course-schedule-ii.py)
 212|word-search-ii|[python](212.word-search-ii.py)
 217|ContainsDuplicate|[python](217.ContainsDuplicate.py)
 219|contains-duplicate-ii|[python](219.contains-duplicate-ii.py)
