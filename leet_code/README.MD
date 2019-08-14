@@ -1,5 +1,5 @@
 ### Content 
-solved 148
+solved 161
 
 index|Problems|Solutions| |
 --|:--:|:--:|:--:
@@ -14,22 +14,22 @@ index|Problems|Solutions| |
 10|RegularExpressionMatching|[python](./python/10.RegularExpressionMatching.py)
 11|container-with-most-water|[python](./python/11.container-with-most-water.py)
 12|integer-to-roman|[python](./python/12.integer-to-roman.py)
-13|roman-to-integer|[python](./python/13.roman-to-integer.py)
-14|longest-common-prefix|[python](./python/14.longest-common-prefix.py)
+13|roman-to-integer|[python](./python/13.roman-to-integer.py)|[cpp](./cpp/13.roman-to-integer.cpp)|
+14|longest-common-prefix|[python](./python/14.longest-common-prefix.py)|[cpp](./cpp/14.longest-common-prefix.cpp)|
 15|3-sum|[python](./python/15.3-sum.py)
 16|3-sum-closest|[python](./python/16.3-sum-closest.py)
 17|letter-combinations-of-a-phone-number|[python](./python/17.letter-combinations-of-a-phone-number.py)
 18|4-sum|[python](./python/18.4-sum.py)
 19|remove-nth-node-from-end-of-list|[python](./python/19.remove-nth-node-from-end-of-list.py)
-20|ValidParentheses|[python](./python/20.ValidParentheses.py)
-21|merge-two-sorted-lists|[python](./python/21.merge-two-sorted-lists.py)
+20|ValidParentheses|[python](./python/20.ValidParentheses.py)|[cpp](./cpp/20.valid-parentheses.cpp)|
+21|merge-two-sorted-lists|[python](./python/21.merge-two-sorted-lists.py)|[cpp](./cpp/21.merge-two-sorted-lists.cpp)|
 22|generate-parentheses|[python](./python/22.generate-parentheses.py)
 23|merge-k-sorted-lists|[python](./python/23.merge-k-sorted-lists.py)
 24|swap-nodes-in-pairs|[python](./python/24.swap-nodes-in-pairs.py)
 25|reverse-nodes-in-k-group|[python](./python/25.reverse-nodes-in-k-group.py)
-26|RemoveDuplicatesfromSortedArray|[python](./python/26.RemoveDuplicatesfromSortedArray.py)
-27|RemoveElement|[python](./python/27.RemoveElement.py)
-28|implement-str-str|[python](./python/28.implement-str-str.py)
+26|RemoveDuplicatesfromSortedArray|[python](./python/26.RemoveDuplicatesfromSortedArray.py)|[cpp](./cpp/26.remove-duplicates-from-sorted-array.cpp)|
+27|RemoveElement|[python](./python/27.RemoveElement.py)|[cpp](./cpp/27.remove-element.cpp)|
+28|implement-str-str|[python](./python/28.implement-str-str.py)|[cpp](./cpp/28.implement-str-str.cpp)|
 29|divide-two-integers|[python](./python/29.divide-two-integers.py)
 30|substring-with-concatenation-of-all-words|[python](./python/30.substring-with-concatenation-of-all-words.py)
 31|next-permutation|[python](./python/31.next-permutation.py)
@@ -81,8 +81,14 @@ index|Problems|Solutions| |
 77|combinations|[python](./python/77.combinations.py)
 78|subsets|[python](./python/78.subsets.py)
 79|word-search|[python](./python/79.word-search.py)
+80|remove-duplicates-from-sorted-array-ii|[python](./python/80.remove-duplicates-from-sorted-array-ii.py)
+81|search-in-rotated-sorted-array-ii|[python](./python/81.search-in-rotated-sorted-array-ii.py)
 83|remove-duplicates-from-sorted-list|[python](./python/83.remove-duplicates-from-sorted-list.py)
+84|largest-rectangle-in-histogram|[python](./python/84.largest-rectangle-in-histogram.py)
+85|maximal-rectangle|[python](./python/85.maximal-rectangle.py)
 88|MergeSortedArray|[python](./python/88.MergeSortedArray.py)
+89|gray-code|[python](./python/89.gray-code.py)
+90|subsets-ii|[python](./python/90.subsets-ii.py)
 93|restoreIPAddress|[python](./python/93.restoreIPAddress.py)
 94|BinaryTreeInorderTraversal|[python](./python/94.BinaryTreeInorderTraversal.py)
 95|UniqueBinarySearchTreesII|[python](./python/95.UniqueBinarySearchTreesII.py)
@@ -100,12 +106,14 @@ index|Problems|Solutions| |
 121|BestTimetoBuyandSellStock|[python](./python/121.BestTimetoBuyandSellStock.py)
 122|BestTimetoBuyandSellStockII|[python](./python/122.BestTimetoBuyandSellStockII.py)
 125|valid-palindrome|[python](./python/125.valid-palindrome.py)
+126|word-ladder-ii|[python](./python/126.word-ladder-ii.py)
 131|palindrome-partitioning|[python](./python/131.palindrome-partitioning.py)
 133|clone-graph|[python](./python/133.clone-graph.py)
 136|single-number|[python](./python/136.single-number.py)
 139|word-break|[python](./python/139.word-break.py)
 140|word-break-ii|[python](./python/140.word-break-ii.py)
 141|linked-list-cycle|[python](./python/141.linked-list-cycle.py)
+149|max-points-on-a-line|[python](./python/149.max-points-on-a-line.py)
 152|maximum-product-subarray|[python](./python/152.maximum-product-subarray.py)
 155|min-stack|[python](./python/155.min-stack.py)
 160|intersection-of-two-linked-lists|[python](./python/160.intersection-of-two-linked-lists.py)
@@ -128,6 +136,11 @@ index|Problems|Solutions| |
 212|word-search-ii|[python](./python/212.word-search-ii.py)
 217|ContainsDuplicate|[python](./python/217.ContainsDuplicate.py)
 219|contains-duplicate-ii|[python](./python/219.contains-duplicate-ii.py)
+226|invert-binary-tree|[python](./python/226.invert-binary-tree.py)
+233|number-of-digit-one|[python](./python/233.number-of-digit-one.py)
+234|palindrome-linked-list|[python](./python/234.palindrome-linked-list.py)
+235|lowest-common-ancestor-of-a-binary-search-tree|[python](./python/235.lowest-common-ancestor-of-a-binary-search-tree.py)
+237|delete-node-in-a-linked-list|[python](./python/237.delete-node-in-a-linked-list.py)
 242|valid-anagram|[python](./python/242.valid-anagram.py)
 258|AddDigits|[python](./python/258.AddDigits.py)
 263|UglyNumber|[python](./python/263.UglyNumber.py)

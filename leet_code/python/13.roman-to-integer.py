@@ -5,6 +5,7 @@
 #
 class Solution:
     def romanToInt(self, s: str) -> int:
+        
         roman = {
             "I":1,  "IV":4, "V":5,  "IX":9,
             "X":10, "XL":40,"L":50, "XC":90,
@@ -19,4 +20,22 @@ class Solution:
                 res += roman[s[i]]
                 i+=1
         return res
+    
+    def funcname(self, s):
+        roman = {
+            "I":1, "V":5,  "X":10, "L":50, 
+            "C":100,"D":500,"M":1000
+        }
 
+        num = dic[s[0]]
+        for i in range(1, len(s)):
+            if s[i] in dic:
+                if dic[s[i-1]] < dic[s[i]]:
+                    res -= 2*dic[s[i-1]]
+                num += dic[s[i]]
+        return num
+    
+if __name__ == "__main__":
+    s = Solution()
+    a = s.funcname("IVI")
+    print(a)

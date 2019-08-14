@@ -4,10 +4,7 @@
 # [37] Sudoku Solver
 #
 class Solution:
-    def solveSudoku(self, board: List[List[str]]) -> None:
-        """
-        Do not return anything, modify board in-place instead.
-        """
+    def solveSudoku(self, board: List[List[str]]) -> None:       
         self.board = board
         self.val = self.PossibleVals()
         self.Solver()
@@ -63,4 +60,5 @@ class Solution:
             else:
                 self.val[k].append(update[k])
         return None
+
 
