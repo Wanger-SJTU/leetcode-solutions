@@ -1,11 +1,11 @@
 此Repo为算法题解法记录，目前包括以下几部分：
 
-## [剑指offer Solutions](./CodingInterviews/README.md)
+## [剑指offer Solutions](./CodingInterviews)
 剑指offer相关题目的Python和C++实现。
 
-## [LeetCode Solutions](./leet_code/README.md)
+## [LeetCode Solutions](./leet_code)
 
-leetCode 题目的Python实现, [leetcode页面](./leet_code/README.md)
+leetCode 题目的Python实现, [leetcode页面](./leet_code)
 
 
 ## [背包九讲](./pack_problem/READMED.md)
