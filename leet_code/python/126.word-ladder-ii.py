@@ -4,8 +4,12 @@
 # [126] Word Ladder II
 #
 class Solution:
+    #BFS
     def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
-        wordList.append(endWord)
+        #wordList.append(endWord)
+        wordList = set(wordList)
+        if endWord not in wordList:
+            return []
         level = {beginWord}
         parents = collections.defaultdict(set)
         while level and endWord not in parents:
@@ -21,5 +25,5 @@ class Solution:
         res = [[endWord]]
         while res and res[0][0] != beginWord:
             res = [[p]+r for r in res for p in parents[r[0]]]
-        return res
+        return sorted(res)
 
