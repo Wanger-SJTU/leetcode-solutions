@@ -1,5 +1,5 @@
 ### Content 
-solved 161
+solved 165
 
 index|Problems|Solutions| |
 --|:--:|:--:|:--:
@@ -110,6 +110,7 @@ index|Problems|Solutions| |
 131|palindrome-partitioning|[python](./python/131.palindrome-partitioning.py)
 133|clone-graph|[python](./python/133.clone-graph.py)
 136|single-number|[python](./python/136.single-number.py)
+137|single-number-ii|[python](./python/137.single-number-ii.py)
 139|word-break|[python](./python/139.word-break.py)
 140|word-break-ii|[python](./python/140.word-break-ii.py)
 141|linked-list-cycle|[python](./python/141.linked-list-cycle.py)
@@ -119,12 +120,14 @@ index|Problems|Solutions| |
 160|intersection-of-two-linked-lists|[python](./python/160.intersection-of-two-linked-lists.py)
 167|TwoSumII-Inputarrayissorted|[python](./python/167.TwoSumII-Inputarrayissorted.py)
 168|ExcelSheetColumnTitle|[python](./python/168.ExcelSheetColumnTitle.py)
-169|MajorityElement|[python](./python/169.MajorityElement.py)
+169|majority-element|[python](./python/169.majority-element.py)
 171|ExcelSheetColumnNumber|[python](./python/171.ExcelSheetColumnNumber.py)
 172|FactorialTrailingZeroes|[python](./python/172.FactorialTrailingZeroes.py)
+187|repeated-dna-sequences|[python](./python/187.repeated-dna-sequences.py)
 189|RotateArray|[python](./python/189.RotateArray.py)
 190|reverse-bits|[python](./python/190.reverse-bits.py)
 191|number-of-1-bits|[python](./python/191.number-of-1-bits.py)
+201|bitwise-and-of-numbers-range|[python](./python/201.bitwise-and-of-numbers-range.py)
 202|HappyNumber|[python](./python/202.HappyNumber.py)
 203|remove-linked-list-elements|[python](./python/203.remove-linked-list-elements.py)
 204|count-primes|[python](./python/204.count-primes.py)
@@ -143,6 +146,7 @@ index|Problems|Solutions| |
 237|delete-node-in-a-linked-list|[python](./python/237.delete-node-in-a-linked-list.py)
 242|valid-anagram|[python](./python/242.valid-anagram.py)
 258|AddDigits|[python](./python/258.AddDigits.py)
+260|single-number-iii|[python](./python/260.single-number-iii.py)
 263|UglyNumber|[python](./python/263.UglyNumber.py)
 268|MissingNumber|[python](./python/268.MissingNumber.py)
 283|move-zeroes|[python](./python/283.move-zeroes.py)

@@ -36,7 +36,18 @@ class LengthOfLongestSubstring(object):
     return ans
 
   def sliding_window(self,s):
-    return lengthOfLongestSubstring(s)
+    n,hashset = len(s), set()
+    ans,i,j = 0,0,0
+    while i < n and j < n:
+      if s[j] not in hashset:
+        hashset.add(s[j])
+        j += 1
+        ans = max(ans, j-i)
+      else:
+        hashset.remove(s[i])
+        i += 1
+    return ans
+    
   def _unique(self, s, start, end):
     set_char = set(list(s))
     return True if len(set_char) == len(s) else False
