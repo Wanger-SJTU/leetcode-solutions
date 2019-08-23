@@ -35,9 +35,17 @@
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
         if not nums: return None
-        record_max = [0]*len(nums)
-        record_min = [0]*len(nums)
-        for num in nums:
+        locMin = locMax = gloMax = nums[0]
+        for i in range(1, len(nums)):
+            if nums[i] < 0:
+                tmp = locMax
+                locMax = max(locMin*nums[i], nums[i])
+                locMin = min(tmp*nums[i], nums[i])
+            else:
+                locMax = max(locMax*nums[i], nums[i])
+                locMin = min(locMin*nums[i], nums[i])
+            gloMax = max(gloMax, locMax)
+        return gloMax
 
 
 

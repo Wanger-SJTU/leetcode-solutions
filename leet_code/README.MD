@@ -1,12 +1,12 @@
 ### Content 
-solved 165
+solved 173
 
 index|Problems|Solutions| |
 --|:--:|:--:|:--:
 1|two-sum|[python](./python/1.two-sum.py)|[cpp](./cpp/1.two-sum.cpp)|
 2|Add2Numbers|[python](./python/2.Add2Numbers.py)
 3|LongestSubstringWithoutRepeatingCharacters|[python](./python/3.LongestSubstringWithoutRepeatingCharacters.py)|[cpp](./cpp/3.longest-substring-without-repeating-characters.cpp)|
-4|MedianofTwoSortedArrays|[python](./python/4.MedianofTwoSortedArrays.py)
+4|median-of-two-sorted-arrays|[python](./python/4.median-of-two-sorted-arrays.py)
 5|LongestPalindromicSubstring|[python](./python/5.LongestPalindromicSubstring.py)
 7|reverseNumber|[python](./python/7.reverseNumber.py)|[cpp](./cpp/7.reverse-integer.cpp)|
 8|str2num|[python](./python/8.str2num.py)
@@ -86,9 +86,12 @@ index|Problems|Solutions| |
 83|remove-duplicates-from-sorted-list|[python](./python/83.remove-duplicates-from-sorted-list.py)
 84|largest-rectangle-in-histogram|[python](./python/84.largest-rectangle-in-histogram.py)
 85|maximal-rectangle|[python](./python/85.maximal-rectangle.py)
+86|partition-list|[python](./python/86.partition-list.py)
+87|scramble-string|[python](./python/87.scramble-string.py)
 88|MergeSortedArray|[python](./python/88.MergeSortedArray.py)
 89|gray-code|[python](./python/89.gray-code.py)
 90|subsets-ii|[python](./python/90.subsets-ii.py)
+91|decode-ways|[python](./python/91.decode-ways.py)
 93|restoreIPAddress|[python](./python/93.restoreIPAddress.py)
 94|BinaryTreeInorderTraversal|[python](./python/94.BinaryTreeInorderTraversal.py)
 95|UniqueBinarySearchTreesII|[python](./python/95.UniqueBinarySearchTreesII.py)
@@ -114,7 +117,10 @@ index|Problems|Solutions| |
 139|word-break|[python](./python/139.word-break.py)
 140|word-break-ii|[python](./python/140.word-break-ii.py)
 141|linked-list-cycle|[python](./python/141.linked-list-cycle.py)
+147|insertion-sort-list|[python](./python/147.insertion-sort-list.py)
+148|sort-list|[python](./python/148.sort-list.py)
 149|max-points-on-a-line|[python](./python/149.max-points-on-a-line.py)
+151|reverse-words-in-a-string|[python](./python/151.reverse-words-in-a-string.py)
 152|maximum-product-subarray|[python](./python/152.maximum-product-subarray.py)
 155|min-stack|[python](./python/155.min-stack.py)
 160|intersection-of-two-linked-lists|[python](./python/160.intersection-of-two-linked-lists.py)
@@ -135,7 +141,6 @@ index|Problems|Solutions| |
 206|reverse-linked-list|[python](./python/206.reverse-linked-list.py)
 207|course-schedule|[python](./python/207.course-schedule.py)
 208|implement-trie-prefix-tree|[python](./python/208.implement-trie-prefix-tree.py)|[cpp](./cpp/208.implement-trie-prefix-tree_0.py)|
-210|course-schedule-ii|[python](./python/210.course-schedule-ii.py)
 212|word-search-ii|[python](./python/212.word-search-ii.py)
 217|ContainsDuplicate|[python](./python/217.ContainsDuplicate.py)
 219|contains-duplicate-ii|[python](./python/219.contains-duplicate-ii.py)
@@ -150,6 +155,8 @@ index|Problems|Solutions| |
 263|UglyNumber|[python](./python/263.UglyNumber.py)
 268|MissingNumber|[python](./python/268.MissingNumber.py)
 283|move-zeroes|[python](./python/283.move-zeroes.py)
+292|nim-game|[python](./python/292.nim-game.py)
+338|counting-bits|[python](./python/338.counting-bits.py)
 344|reverse-string|[python](./python/344.reverse-string.py)
 367|ValidPerfectSquare|[python](./python/367.ValidPerfectSquare.py)
 387|first-unique-character-in-a-string|[python](./python/387.first-unique-character-in-a-string.py)
@@ -164,6 +171,7 @@ index|Problems|Solutions| |
 516|LongestPalindromicSubsequence|[python](./python/516.LongestPalindromicSubsequence.py)
 532|K-diffPairsinanArray|[python](./python/532.K-diffPairsinanArray.py)
 746|MinCostClimbingStairs|[python](./python/746.MinCostClimbingStairs.py)
+754|reach-a-number|[python](./python/754.reach-a-number.py)
 784|LetterCasePermutation|[python](./python/784.LetterCasePermutation.py)
 942|DIStringMatch|[python](./python/942.DIStringMatch.py)
 1009|ComplementofBase10Integer|[python](./python/1009.ComplementofBase10Integer.py)

@@ -38,26 +38,26 @@ class Solution(object):
 			print(table[i])
 		return sub_str
 	
-def __expandAroundCenter(self,s):
-	start = 0 
-	end = 0
-	for i in range(len(s)):
-		len1 = self.__expand(s, i, i)
-		len2 = self.__expand(s, i, i+1)
-		max_len = max(len1,len2)
-		
-		if max_len >= end -start + 1:
-			start = i - int((max_len - 1) // 2)
-			end   = i + int(max_len // 2)
-	return s[start:end + 1]
+	def __expandAroundCenter(self,s):
+		start = 0 
+		end = 0
+		for i in range(len(s)):
+			len1 = self.__expand(s, i, i)
+			len2 = self.__expand(s, i, i+1)
+			max_len = max(len1,len2)
+			
+			if max_len >= end -start + 1:
+				start = i - int((max_len - 1) // 2)
+				end   = i + int(max_len // 2)
+		return s[start:end + 1]
 
-def __expand(self, s, left, right):
-	L = left
-	R = right
-	while L >=0 and R < len(s) and s[L] == s[R]:
-		L -= 1
-		R += 1
-	return R - L - 1
+	def __expand(self, s, left, right):
+		L = left
+		R = right
+		while L >=0 and R < len(s) and s[L] == s[R]:
+			L -= 1
+			R += 1
+		return R - L - 1
 
 	def __call__(self, s, method='DP'):
 		if _DEBUG:
