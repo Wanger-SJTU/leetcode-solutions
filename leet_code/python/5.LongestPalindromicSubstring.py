@@ -1,7 +1,7 @@
 
-# Given a string s, find the longest palindromic substring in s. 
+# Given a string s, find the longest palindromic substring in s.
 # You may assume that the maximum length of s is 1000.
-# 
+#
 # Example:
 # Input: "babad"
 # Output: "bab"
@@ -37,15 +37,15 @@ class Solution(object):
 		for i in range(len(s)):
 			print(table[i])
 		return sub_str
-	
+
 	def __expandAroundCenter(self,s):
-		start = 0 
+		start = 0
 		end = 0
 		for i in range(len(s)):
 			len1 = self.__expand(s, i, i)
 			len2 = self.__expand(s, i, i+1)
 			max_len = max(len1,len2)
-			
+
 			if max_len >= end -start + 1:
 				start = i - int((max_len - 1) // 2)
 				end   = i + int(max_len // 2)
