@@ -6,10 +6,10 @@
 from typing import List
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
-        if not nums:return 1
+        if not nums: return 1
         for i in range(len(nums)):
             while 0<=nums[i]-1<len(nums) and nums[nums[i]-1]!= nums[i]:
-                tmp = nums[i]-1 
+                tmp = nums[i]-1
                 nums[i], nums[tmp] = nums[tmp], nums[i]
         for i in range(len(nums)):
             if nums[i] != i+1:
