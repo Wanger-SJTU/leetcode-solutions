@@ -1,5 +1,5 @@
 ### Content 
-solved 207
+solved 213
 
 index|Problems|Solutions| |
 --|:--:|:--:|:--:
@@ -105,6 +105,8 @@ index|Problems|Solutions| |
 100|same-tree|[python](./python/100.same-tree.py)
 101|symmetric-tree|[python](./python/101.symmetric-tree.py)
 104|maximum-depth-of-binary-tree|[python](./python/104.maximum-depth-of-binary-tree.py)
+105|从前序与中序遍历序列构造二叉树|[python](./python/105.从前序与中序遍历序列构造二叉树.py)
+106|从中序与后序遍历序列构造二叉树|[python](./python/106.从中序与后序遍历序列构造二叉树.py)
 107|binary-tree-level-order-traversal-ii|[python](./python/107.binary-tree-level-order-traversal-ii.py)
 108|convert-sorted-array-to-binary-search-tree|[python](./python/108.convert-sorted-array-to-binary-search-tree.py)
 110|balanced-binary-tree|[python](./python/110.balanced-binary-tree.py)
@@ -161,6 +163,7 @@ index|Problems|Solutions| |
 225|用队列实现栈|[python](./python/225.用队列实现栈.py)
 226|invert-binary-tree|[python](./python/226.invert-binary-tree.py)
 227|基本计算器-ii|[python](./python/227.基本计算器-ii.py)
+228|汇总区间|[python](./python/228.汇总区间.py)
 232|用栈实现队列|[python](./python/232.用栈实现队列.py)
 233|number-of-digit-one|[python](./python/233.number-of-digit-one.py)
 234|palindrome-linked-list|[python](./python/234.palindrome-linked-list.py)
@@ -177,11 +180,13 @@ index|Problems|Solutions| |
 292|nim-game|[python](./python/292.nim-game.py)
 295|数据流的中位数|[python](./python/295.数据流的中位数.py)
 297|二叉树的序列化与反序列化|[python](./python/297.二叉树的序列化与反序列化.py)
+300|最长上升子序列|[python](./python/300.最长上升子序列.py)
 318|最大单词长度乘积|[python](./python/318.最大单词长度乘积.py)
 327|count-of-range-sum|[python](./python/327.count-of-range-sum.py)
 338|counting-bits|[python](./python/338.counting-bits.py)
 342|4-的幂|[python](./python/342.4-的幂.py)
 344|reverse-string|[python](./python/344.reverse-string.py)
+354|俄罗斯套娃信封问题|[python](./python/354.俄罗斯套娃信封问题.py)
 367|ValidPerfectSquare|[python](./python/367.ValidPerfectSquare.py)
 371|两整数之和|[python](./python/371.两整数之和.py)
 380|常数时间插入、删除和获取随机元素|[python](./python/380.常数时间插入、删除和获取随机元素.py)
@@ -210,3 +215,4 @@ index|Problems|Solutions| |
 1009|ComplementofBase10Integer|[python](./python/1009.ComplementofBase10Integer.py)
 1022|从根到叶的二进制数之和|[python](./python/1022.从根到叶的二进制数之和.py)
 1025|divisor-game|[python](./python/1025.divisor-game.py)
+1036|逃离大迷宫|[python](./python/1036.逃离大迷宫.py)
