@@ -8,7 +8,7 @@
 leetCode 题目的Python实现, [leetcode页面](./leet_code)
 
 
-## [背包九讲](./pack_problem/READMED.md)
+## [背包九讲](./pack_problem)
 Python代码实现的背包九讲相关
 
 ## 其他相关的算法题目
