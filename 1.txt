@@ -1,0 +1,43 @@
+class Solution():
+    def num1(self,string):
+        count = 0
+        res = [0] * len(string)
+        back = [0] * len(string)
+
+        for i in range(len(string) - 1, 0, -1):
+            if string[i] == 'L' and string[i - 1] == 'R':
+                count = 0
+            if string[i] == 'R' and string[i - 1] == 'R':
+                count += 1
+                back[i - 1] = count
+        count = 0
+        for i in range(len(string) - 1):
+            if string[i] == 'R' and string[i + 1] == 'L':
+                count = 0
+            if string[i] == 'L' and string[i + 1] == 'L':
+                count += 1
+                back[i + 1] = count
+                
+        for i in range(len(string)):
+            if back[i] == 0:
+                res[i] += 1
+                continue
+            if back[i] % 2 == 1:
+                if string[i] == 'R':
+                    res[i + back[i] + 1] += 1
+                if string[i] == 'L':
+                    res[i - back[i] - 1] += 1
+            if back[i] % 2 == 0:
+                if string[i] == 'R':
+                    res[i + back[i]] += 1
+                if string[i] == 'L':
+                    res[i - back[i]] += 1
+        for i in res:
+            print(i, end=' ')
+
+
+if __name__ == '__main__':
+    import sys
+    string = sys.stdin.readline().strip()
+    Solution().num1(string)
+
