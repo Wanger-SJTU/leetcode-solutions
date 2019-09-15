@@ -1,43 +1,32 @@
-class Solution():
-    def num1(self,string):
-        count = 0
-        res = [0] * len(string)
-        back = [0] * len(string)
+import sys
 
-        for i in range(len(string) - 1, 0, -1):
-            if string[i] == 'L' and string[i - 1] == 'R':
-                count = 0
-            if string[i] == 'R' and string[i - 1] == 'R':
-                count += 1
-                back[i - 1] = count
-        count = 0
-        for i in range(len(string) - 1):
-            if string[i] == 'R' and string[i + 1] == 'L':
-                count = 0
-            if string[i] == 'L' and string[i + 1] == 'L':
-                count += 1
-                back[i + 1] = count
-                
-        for i in range(len(string)):
-            if back[i] == 0:
-                res[i] += 1
-                continue
-            if back[i] % 2 == 1:
-                if string[i] == 'R':
-                    res[i + back[i] + 1] += 1
-                if string[i] == 'L':
-                    res[i - back[i] - 1] += 1
-            if back[i] % 2 == 0:
-                if string[i] == 'R':
-                    res[i + back[i]] += 1
-                if string[i] == 'L':
-                    res[i - back[i]] += 1
-        for i in res:
-            print(i, end=' ')
+def dis(point,a,b,x,y):
+    return (point[0] - x) ** 2 / a ** 2 + (point[1] - y) ** 2 / b ** 2
+def dis2(p,a,b,x,y):
+    return (p[0] - x) ** 2 / b ** 2 + (p[1] - y) ** 2 / a ** 2
+def frozen_moster(a, b,points):
+
+    maxcnt = 0
+    for x in range(-50, 51):
+        for y in range(-50, 51):
+            cnt1, cnt2 = 0, 0
+            for p in points:
+                if dis(p,a,b,x,y)<= 1:
+                    cnt1 += 1
+                    if cnt1 > maxcnt:
+                        maxcnt = cnt1
+                if dis(p,a,b,x,y) <= 1:
+                    cnt2 += 1
+                    if cnt2 > maxcnt:
+                        maxcnt = cnt2
+    print(maxcnt)
 
 
 if __name__ == '__main__':
-    import sys
-    string = sys.stdin.readline().strip()
-    Solution().num1(string)
+    arr = [int(each) for each in sys.stdin.readline().split()]
+    n, a, b = arr
+    points = []
+    for i in range(n):
+        points.append([int(each) for each in sys.stdin.readline().split()])
+    frozen_moster(a, b, points)
 
