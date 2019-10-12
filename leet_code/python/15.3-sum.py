@@ -4,15 +4,14 @@
 # [15] 3Sum
 #
 import bisect
+from collections import Counter
 from typing import List
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         if not nums:
             return []
-        count = {}
-        for n in nums:
-            count[n] = count.get(n,0)+ 1
+        count = Counter(nums)
         ans = []
         nums = sorted(count)
         for i, n in enumerate(nums):

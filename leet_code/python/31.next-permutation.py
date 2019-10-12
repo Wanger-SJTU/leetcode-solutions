@@ -8,7 +8,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        if not nums: 
+        if not nums:
             return None
         i,j = len(nums)-1, -1
         # find the number not in order
@@ -17,7 +17,7 @@ class Solution:
                 j = i-1
                 break
             i -= 1
-        
+
         for i in range(len(nums)-1, -1, -1):
             if nums[i] > nums[j]:
                 nums[i],nums[j]=nums[j],nums[i]

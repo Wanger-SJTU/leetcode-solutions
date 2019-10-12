@@ -36,8 +36,8 @@ class Solution:
                     count = 0
 
         return ans
-        
-    def timeLimited(self, s: str, words: List[str]) -> List[int]:
+
+    def TLE(self, s: str, words: List[str]) -> List[int]:
         if not words or not s:
             return []
         max_len = max(map(len, words))
@@ -52,22 +52,22 @@ class Solution:
                             changed = True
                             length = j
                             srt = idx
-                        idx = idx+j+1    
+                        idx = idx+j+1
                         break
                     else:
                         idx = srt + length +1
                         words_dict = Counter(words)
                         changed = False
                         break
-            
-            
+
+
             if sum(words_dict.values()) == 0:
                 if sum(map(len,words)) == idx-srt:
                     res.append(srt)
                 words_dict = Counter(words)
                 changed = False
                 idx = srt + length +1
-            
+
         return res
 
 if __name__ == "__main__":

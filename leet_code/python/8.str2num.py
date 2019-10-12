@@ -2,15 +2,15 @@
 '''
 Implement atoi which converts a string to an integer.
 
-The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. 
-Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, 
+The function first discards as many whitespace characters as necessary until the first non-whitespace character is found.
+Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible,
 and interprets them as a numerical value.
 
-The string can contain additional characters after those that form the integral number, 
+The string can contain additional characters after those that form the integral number,
 which are ignored and have no effect on the behavior of this function.
 
-If the first sequence of non-whitespace characters in str is not a valid integral number, 
-or if no such sequence exists because either str is empty or it contains only whitespace characters, 
+If the first sequence of non-whitespace characters in str is not a valid integral number,
+or if no such sequence exists because either str is empty or it contains only whitespace characters,
 no conversion is performed.
 
 If no valid conversion could be performed, a zero value is returned.
@@ -23,56 +23,32 @@ class Solution(object):
         :type str: str
         :rtype: int
         """
-        number = ''
-        converts = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '-', '+']
-        pdb.set_trace()
-        for character in string:
-            if len(number) == 0 or character in converts[0:10]:
-                if character == ' ':
+        number,sign,point = '',1, False
+        string = string.lstrip()
+        for char in string:
+            if char == '+':
+                if len(number)==0:
                     continue
-                if character in converts:
-                    number = number + character
-                elif character == '.':
-                    break
-                elif len(number) == 0:
+                else:
                     return 0
-                elif len(number) > 0:
-                    break
+            elif  char == '-':
+                if len(number)==0:
+                    continue
+                else:
+                    sign *= -1
+            elif char == '.':
+                if point:
+                    return 0
+                point = True
+                number += char
+            elif char.isdigit():
+                number += char
             else:
-                if character not in converts[0:10]:
-                    break
-        if len(number) == 0:
-            return 0
-        sign = 1
-        result = 0
-        start = 0
-        for character in number:
-            if character in converts[0:10]:
-                break
-            elif character == '-':
-                sign = sign*-1
-                start = start+1
-            elif character == '+':
-                start = start+1
-        if start > 1:
-            return 0
-        for i in range(start,len(number)):
-            if self.convert2num(number[i]) == -1:
                 return 0
-            result = result*10 + self.convert2num(number[i]) 
-        result = sign*result
-        if result < -2**31:
-            result = -2**31
-        if result > 2**31 -1:
-            return 2**31 -1
-        return result
-
-    def convert2num(self, string):
-        dict_num = {'1':1, '2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '8':8, '9':9, '0':0,  '-':-1, '+':-1}
-        return dict_num[string]
+        return sign*min(float(number), 2<<32-1) if point else sign*min(int(number), 2<<32-1)
 
 if __name__ == '__main__':
-    inputs = "4193 with words"
+    inputs = "4193"
     '''
     input                               output
     '+- 1'                                0
