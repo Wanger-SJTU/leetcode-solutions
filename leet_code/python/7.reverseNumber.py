@@ -30,7 +30,7 @@ def reverse(x):
 def reverse_math(n):
     if n.bit_length() >= 32: return 0
     sign = n >= 0
-    res,n = 0,abs(n)
+    res, n = 0, abs(n)
     while n:
         n, tmp = divmod(n,10)
         res = res*10+tmp

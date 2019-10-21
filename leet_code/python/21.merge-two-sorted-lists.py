@@ -37,8 +37,8 @@ class Solution:
             cur = cur.next
         cur.next = l1 or l2
         return dummy.next
-    
-    # recursively    
+
+    # recursively
     def mergeTwoLists2(self, l1, l2):
         if not l1 or not l2:
             return l1 or l2
@@ -48,8 +48,8 @@ class Solution:
         else:
             l2.next = self.mergeTwoLists(l1, l2.next)
             return l2
-        
-    # in-place, iteratively        
+
+    # in-place, iteratively
     def mergeTwoLists(self, l1, l2):
         if None in (l1, l2):
             return l1 or l2

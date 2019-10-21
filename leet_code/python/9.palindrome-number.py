@@ -7,6 +7,7 @@ class Solution:
     def isPalindrome(self, x: int) -> bool:
         x = str(x)
         return x == x[::-1]
+
     def mathop(self, x):
         if x < 0: return False
         hi = 1
