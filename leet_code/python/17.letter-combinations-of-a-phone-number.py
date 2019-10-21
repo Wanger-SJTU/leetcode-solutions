@@ -16,9 +16,9 @@ class Solution:
             '9':list('wxyz')
         }
         res = []
-        for idx,num in enumerate(digits):
+        for idx, num in enumerate(digits):
             if idx == 0:
-                res=num2char[num]
+                res = num2char[num]
             else:
                 tmp = []
                 for item in res:

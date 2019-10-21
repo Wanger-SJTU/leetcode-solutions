@@ -7,13 +7,13 @@ from typing import List
 from collections import Counter
 class Solution:
     def findSubstring(self, s: str, words: List[str]) -> List[int]:
-        if len(words) == 0:return []
+        if len(words) == 0: return []
         # initialize d, l, ans
-        i,l,d,ans =0, len(words[0]), Counter(words),[]
+        i,l,d,ans = 0, len(words[0]), Counter(words),[]
 
         # sliding window(s)
         for k in range(l):
-            left,subd,count = k,{},0
+            left,subd,count = k, {}, 0
             for j in range(k, len(s)-l+1, l):
                 tword = s[j:j+l]
                 # valid word
@@ -59,8 +59,6 @@ class Solution:
                         words_dict = Counter(words)
                         changed = False
                         break
-
-
             if sum(words_dict.values()) == 0:
                 if sum(map(len,words)) == idx-srt:
                     res.append(srt)

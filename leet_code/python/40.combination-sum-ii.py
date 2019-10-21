@@ -10,16 +10,18 @@ class Solution:
         res  = []
         candidates.sort()
         def dfs(nums, target, path):
-            if target < 0: return 
+            if target < 0: return
             if target == 0:
                 res.append(path)
                 return
             for i in range(len(nums)):
-                if i>0 and nums[i] == nums[i-1]: continue
-                if nums[i] > target: break
+                if i>0 and nums[i] == nums[i-1]:
+                    continue
+                if nums[i] > target:
+                    break
                 dfs(nums[i+1:], target-nums[i], path+[nums[i]])
         dfs(candidates, target, [])
-        
+
         return res
 
 # if __name__ == "__main__":

@@ -23,7 +23,7 @@ class Solution(object):
         :type str: str
         :rtype: int
         """
-        number,sign,point = '',1, False
+        number,sign,point = '', 1, False
         string = string.lstrip()
         for char in string:
             if char == '+':
