@@ -1,4 +1,3 @@
-
 class Solution:
     """
     @param: n: The number of queens
@@ -6,28 +5,27 @@ class Solution:
     """
     def solveNQueens(self, n):
         # write your code here
-        res = []
-        def check(pre,cur):
-            for col in pre:
-                if col & curRow:
-                    return False
-            ## panduan
-            return False  if (cur << 1) & col or (cur >> 1) & col else True
+        res, q = [], [-1] * n   # cnt 用计数，q用于已经放的位置，例如q[2]=3 表示第3行的放到了第4个位置
 
-        def dfs(i, path):
-            print(i)
-            if i == n:
-                res.append(path)
-                return
-            curCol = 1
-            for idx in range(n):
-                if check(path, curCol<<idx):
-                    dfs(i+1, path+[curCol<<idx])
-        curRow = 1
-        for i in range(n):
-            dfs(1, [curRow<<i])
-        print(len(res))
+        def dfs(k, n):
+            if k == n:
+                tmp = []
+                for i in range(n):  # 输出一个结果
+                    s = ''
+                    for j in range(n):
+                        s += 'Q' if q[i] == j else '.'
+                    tmp.append(s)
+                res.append(tmp)
+            else:
+                for j in range(n):  # 一行一行的进行深度搜索
+                    if self.place(k, j, q):
+                        q[k] = j
+                        dfs(k+1, n)
+        dfs(0, n)
+        return res
 
-if __name__ == "__main__":
-    s=Solution()
-    s.solveNQueens(8)
+    def place(self, k, j, q):  # 判断该位置是否可以放一个棋子
+        for i in range(k):
+            if q[i] == j or abs(q[i]-j) == abs(i-k):  # 不同列，不同斜线
+                return 0
+        return 1
