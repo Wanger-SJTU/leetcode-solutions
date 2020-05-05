@@ -3,22 +3,32 @@
  *
  * [1] Two Sum
  */
-// #include<vector>
-// #include<map>
-// #include<unordered_map>
+
+#include <iostream>
+#include <vector>
+#include <map>
+#include <algorithm>
 using namespace std;
 
-class Solution {
+// @lc code=start
+class Solution 
+{
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> indices;
-        for (int i = 0; i < nums.size(); i++) {
-            if (indices.find(target - nums[i]) != indices.end()) {
-                return {indices[target - nums[i]], i};
+    vector<int> twoSum(vector<int>& nums, int target) 
+    {
+        map<int, int> record;
+        vector<int> res;
+        for(auto i = 0; i < nums.size(); i++)
+        {
+            if(record.find(target-nums[i]) != record.end())
+            {
+                return {i, record[target-nums[i]]};
             }
-            indices[nums[i]] = i;
+            record[nums[i]] = i;
         }
-        return {};
+        return res;
     }
 };
+
+// @lc code=end
 
