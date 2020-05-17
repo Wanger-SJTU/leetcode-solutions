@@ -25,7 +25,7 @@ Given a list of non-negative integers representing the amount of money of each h
 首先找到递归方程。 
 
 $$
-F(n) = \max(F(n-2)+v_n, F(n-1))
+F(n) = \max(F(n-2)+v_n, \quad F(n-1))
 $$
 
 初始化条件，$F(1)=v_1, \quad F(2)=\max(v_1,v_2)$
