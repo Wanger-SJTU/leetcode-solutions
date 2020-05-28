@@ -1,0 +1,22 @@
+/*
+ * @lc app=leetcode.cn id=33 lang=cpp
+ *
+ * [33] 搜索旋转排序数组
+ */
+#include "common.h"
+// @lc code=start
+class Solution {
+public:
+  int search(vector<int> &nums, int target) {
+    int lo = 0, hi = int(nums.size()) - 1;
+    while (lo < hi) {
+      int mid = (lo + hi) / 2;
+      if ((nums[0] > target) ^ (nums[0] > nums[mid]) ^ (target > nums[mid]))
+        lo = mid + 1;
+      else
+        hi = mid;
+    }
+    return lo == hi && nums[lo] == target ? lo : -1;
+  }
+};
+// @lc code=end

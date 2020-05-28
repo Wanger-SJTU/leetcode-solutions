@@ -6,8 +6,8 @@
 #include "common.h"
 // @lc code=start
 class Solution {
- public:
-  vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+public:
+  vector<vector<int>> combinationSum(vector<int> &candidates, int target) {
     vector<vector<int>> res;
     sort(candidates.begin(), candidates.end());
     vector<int> tmp_res;
@@ -15,9 +15,9 @@ class Solution {
     return res;
   }
 
- private:
-  void search(vector<int>& candidates, int next_pos, vector<int>& tmp_res,
-              int target, vector<vector<int>>& res) {
+private:
+  void search(vector<int> &candidates, int next_pos, vector<int> &tmp_res,
+              int target, vector<vector<int>> &res) {
     if (target == 0) {
       res.push_back(tmp_res);
     }
