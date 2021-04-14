@@ -3,11 +3,13 @@
  *
  * [31] 下一个排列
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  void nextPermutation(vector<int> &nums) {
+  void nextPermutation(vector<int> &nums)
+  {
     int k = nums.size() - 2;
     int l = nums.size() - 1;
     while (k >= 0) {

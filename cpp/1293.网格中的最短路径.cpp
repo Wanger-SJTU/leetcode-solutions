@@ -3,12 +3,14 @@
  *
  * [1293] 网格中的最短路径
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
   vector<vector<int>> visited;
-  bool isValid(int x, int y, int m, int n, int currK) {
+  bool isValid(int x, int y, int m, int n, int currK)
+  {
     if (x < 0 || y < 0 || x >= m || y >= n) {
       return false;
     } else {
@@ -20,7 +22,8 @@ public:
       }
     }
   }
-  int shortestPath(vector<vector<int>> &grid, int k) {
+  int shortestPath(vector<vector<int>> &grid, int k)
+  {
     int m = grid.size();
     int n = grid[0].size();
     queue<pair<pair<pair<int, int>, int>, int>> q;
@@ -52,12 +55,10 @@ public:
         if (isValid(new_x, new_y, m, n, currK)) {
           if (grid[new_x][new_y] == 1) {
             if (currK < k) {
-              q.push(make_pair(make_pair(make_pair(new_x, new_y), currK + 1),
-                               steps + 1));
+              q.push(make_pair(make_pair(make_pair(new_x, new_y), currK + 1), steps + 1));
             }
           } else {
-            q.push(make_pair(make_pair(make_pair(new_x, new_y), currK),
-                             steps + 1));
+            q.push(make_pair(make_pair(make_pair(new_x, new_y), currK), steps + 1));
           }
         }
       }

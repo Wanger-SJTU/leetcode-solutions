@@ -3,11 +3,13 @@
  *
  * [8] 字符串转换整数 (atoi)
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int myAtoi(string str) {
+  int myAtoi(string str)
+  {
     const char *p = str.c_str();
     for (; p != nullptr && *p == ' '; p++) {
     }

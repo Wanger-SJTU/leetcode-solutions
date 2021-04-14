@@ -3,11 +3,13 @@
  *
  * [1402] 做菜顺序
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int maxSatisfaction(vector<int> &satisfaction) {
+  int maxSatisfaction(vector<int> &satisfaction)
+  {
     sort(satisfaction.begin(), satisfaction.end());
     int Cumulative_sum = 0;
 

@@ -3,11 +3,13 @@
  *
  * [11] 盛最多水的容器
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int maxArea(vector<int> &height) {
+  int maxArea(vector<int> &height)
+  {
     int left = 0, right = height.size() - 1;
     int area = 0;
     while (left <= right) {

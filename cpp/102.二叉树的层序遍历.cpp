@@ -3,10 +3,11 @@
  *
  * [102] 二叉树的层序遍历
  */
-#include "common.h"
+#include "leetcode.h"
 
 // * Definition for a binary tree node.
-struct TreeNode {
+struct TreeNode
+{
   int val;
   TreeNode *left;
   TreeNode *right;
@@ -14,12 +15,13 @@ struct TreeNode {
 };
 
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  vector<vector<int>> levelOrder(TreeNode *root) {
+  vector<vector<int>> levelOrder(TreeNode *root)
+  {
     vector<vector<int>> res;
-    if (root == nullptr)
-      return res;
+    if (root == nullptr) return res;
     queue<TreeNode *> tmp_queue;
     tmp_queue.push(root);
     while (!tmp_queue.empty()) {

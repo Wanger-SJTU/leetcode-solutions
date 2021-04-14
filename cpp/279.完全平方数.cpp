@@ -3,12 +3,14 @@
  *
  * [279] 完全平方数
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
 #include <cmath>
-class Solution {
+class Solution
+{
 public:
-  int numSquares(int n) {
+  int numSquares(int n)
+  {
     vector<int> nums(n + 1, 1);
     nums[0] = 0;
     for (int i = 2; i <= n; i++) {

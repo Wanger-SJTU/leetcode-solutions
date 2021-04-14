@@ -3,17 +3,18 @@
  *
  * [17] 电话号码的字母组合
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  vector<string> letterCombinations(string digits) {
+  vector<string> letterCombinations(string digits)
+  {
     if (digits.empty()) {
       return {};
     }
     vector<string> res = {""};
-    vector<string> keymap = {"",    "",    "abc",  "def", "ghi",
-                             "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    vector<string> keymap = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
     for (auto num : digits) {
       int n = res.size();
       for (auto chr : keymap[num - '0']) {

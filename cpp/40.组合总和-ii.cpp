@@ -3,11 +3,13 @@
  *
  * [40] 组合总和 II
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  vector<vector<int>> combinationSum2(vector<int> &candidates, int target) {
+  vector<vector<int>> combinationSum2(vector<int> &candidates, int target)
+  {
     vector<int> cur_res;
     sort(candidates.begin(), candidates.end());
     search(candidates, 0, candidates.size(), cur_res, target);
@@ -16,8 +18,8 @@ public:
 
 private:
   vector<vector<int>> res;
-  void search(vector<int> candidates, int srt, int n, vector<int> cur_res,
-              int target) {
+  void search(vector<int> candidates, int srt, int n, vector<int> cur_res, int target)
+  {
     if (target == 0) {
       res.push_back(cur_res);
       return;

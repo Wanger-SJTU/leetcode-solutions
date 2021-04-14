@@ -3,11 +3,13 @@
  *
  * [33] 搜索旋转排序数组
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int search(vector<int> &nums, int target) {
+  int search(vector<int> &nums, int target)
+  {
     int lo = 0, hi = int(nums.size()) - 1;
     while (lo < hi) {
       int mid = (lo + hi) / 2;

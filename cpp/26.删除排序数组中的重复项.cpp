@@ -3,11 +3,13 @@
  *
  * [26] 删除排序数组中的重复项
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int removeDuplicates(vector<int> &nums) {
+  int removeDuplicates(vector<int> &nums)
+  {
     if (nums.size() <= 1) {
       return nums.size();
     }

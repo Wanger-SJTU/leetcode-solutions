@@ -3,11 +3,13 @@
  *
  * [44] 通配符匹配
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  bool isMatch(string s, string p) {
+  bool isMatch(string s, string p)
+  {
     if (p.empty()) {
       return s.empty();
     }
@@ -16,8 +18,7 @@ public:
         return isMatch(s, p.substr(1, p.size()));
       } else {
         return isMatch(s.substr(1, s.size()), p.substr(1, p.size())) ||
-               isMatch(s.substr(1, s.size()), p) ||
-               isMatch(s, p.substr(1, p.size()));
+               isMatch(s.substr(1, s.size()), p) || isMatch(s, p.substr(1, p.size()));
       }
 
     } else {

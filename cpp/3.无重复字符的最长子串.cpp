@@ -3,11 +3,13 @@
  *
  * [3] 无重复字符的最长子串
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int lengthOfLongestSubstring(string s) {
+  int lengthOfLongestSubstring(string s)
+  {
     vector<int> dict(256, -1);
     int srt = -1;
     int len = 0;

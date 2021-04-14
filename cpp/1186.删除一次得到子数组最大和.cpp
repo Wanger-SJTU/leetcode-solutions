@@ -3,11 +3,13 @@
  *
  * [1186] 删除一次得到子数组最大和
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int maximumSum(vector<int> &arr) {
+  int maximumSum(vector<int> &arr)
+  {
     if (arr.empty()) {
       return 0;
     }

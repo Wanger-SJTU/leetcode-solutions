@@ -3,18 +3,21 @@
  *
  * [22] 括号生成
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  vector<string> generateParenthesis(int n) {
+  vector<string> generateParenthesis(int n)
+  {
     vector<string> res;
     generate(n, n, "", res);
     return res;
   }
 
 private:
-  void generate(int l, int r, string cur, vector<string> &res) {
+  void generate(int l, int r, string cur, vector<string> &res)
+  {
     if (l == 0 && r == 0) {
       res.push_back(cur);
     } else {

@@ -3,19 +3,22 @@
  *
  * [990] 等式方程的可满足性
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class UnionFind {
+class UnionFind
+{
 private:
   vector<int> parent;
 
 public:
-  UnionFind() {
+  UnionFind()
+  {
     parent.resize(26);
     iota(parent.begin(), parent.end(), 0);
   }
 
-  int find(int index) {
+  int find(int index)
+  {
     if (index == parent[index]) {
       return index;
     }
@@ -26,9 +29,11 @@ public:
   void unite(int index1, int index2) { parent[find(index1)] = find(index2); }
 };
 
-class Solution {
+class Solution
+{
 public:
-  bool equationsPossible(vector<string> &equations) {
+  bool equationsPossible(vector<string> &equations)
+  {
     UnionFind uf;
     for (const string &str : equations) {
       if (str[1] == '=') {

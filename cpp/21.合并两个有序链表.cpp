@@ -3,18 +3,21 @@
  *
  * [21] 合并两个有序链表
  */
-#include "common.h"
+#include "leetcode.h"
 
 // Definition for singly-linked list.
-struct ListNode {
+struct ListNode
+{
   int val;
   ListNode* next;
   ListNode(int x) : val(x), next(NULL) {}
 };
 // @lc code=start
-class Solution {
- public:
-  ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+class Solution
+{
+public:
+  ListNode* mergeTwoLists(ListNode* l1, ListNode* l2)
+  {
     if (l1 == nullptr || l2 == nullptr) {
       return l1 == nullptr ? l2 : l1;
     }

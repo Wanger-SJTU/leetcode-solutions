@@ -3,7 +3,7 @@
  *
  * [218] 天际线问题
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
 class Solution
 {

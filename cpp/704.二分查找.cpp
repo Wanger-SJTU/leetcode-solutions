@@ -3,18 +3,13 @@
  *
  * [704] 二分查找
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int search(vector<int> &nums, int target) {
-    // vector<int>::iterator it2 = nums.begin();
-    // vector<int>::iterator it =
-    //     std ::lower_bound(nums.begin(), nums.end(), target);
-    // if (it == nums.end() || *it != target)
-    //   return -1;
-    // else
-    //   return (it - it2);
+  int search(vector<int> &nums, int target)
+  {
     int lo = 0;
     int hi = nums.size() - 1;
     while (lo <= hi) {

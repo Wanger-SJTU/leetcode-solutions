@@ -3,11 +3,13 @@
  *
  * [310] 最小高度树
  */
-#include "common.h"
+#include "leetcode.h"
 
-class Solution {
- public:
-  vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {
+class Solution
+{
+public:
+  vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges)
+  {
     vector<unordered_set<int>> graph;
     for (auto edge : edges) {
       graph[edge[0]].insert(edge[1]);
@@ -38,9 +40,11 @@ class Solution {
 };
 
 // @lc code=start
-class Solution {
- public:
-  vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {
+class Solution
+{
+public:
+  vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges)
+  {
     if (n == 1) {
       return {0};
     }

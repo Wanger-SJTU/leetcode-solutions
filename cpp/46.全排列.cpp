@@ -3,11 +3,13 @@
  *
  * [46] 全排列
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  vector<vector<int>> permute(vector<int> &nums) {
+  vector<vector<int>> permute(vector<int> &nums)
+  {
     vector<vector<int>> res;
     vector<int> cur;
     permute_helper(nums, cur, res);
@@ -15,8 +17,8 @@ public:
   }
 
 private:
-  void permute_helper(vector<int> nums, vector<int> cur_res,
-                      vector<vector<int>> &res) {
+  void permute_helper(vector<int> nums, vector<int> cur_res, vector<vector<int>> &res)
+  {
     if (nums.empty()) {
       res.push_back(cur_res);
       return;

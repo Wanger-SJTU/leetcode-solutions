@@ -3,7 +3,7 @@
  *
  * [327] 区间和的个数
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
 class Solution
 {

@@ -3,13 +3,14 @@
  *
  * [420] 强密码检验器
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int strongPasswordChecker(string s) {
-    if (s.size() < 5)
-      return 6 - s.size();
+  int strongPasswordChecker(string s)
+  {
+    if (s.size() < 5) return 6 - s.size();
   }
 };
 // @lc code=end

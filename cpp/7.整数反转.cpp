@@ -3,11 +3,13 @@
  *
  * [7] 整数反转
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int reverse(int x) {
+  int reverse(int x)
+  {
     string x_str = to_string(abs(x));
     std::reverse(x_str.begin(), x_str.end());
     long long res = stoll(x_str);

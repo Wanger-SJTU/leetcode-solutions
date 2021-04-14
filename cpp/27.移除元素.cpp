@@ -3,13 +3,14 @@
  *
  * [27] 移除元素
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int removeElement(vector<int> &nums, int val) {
-    if (nums.size() == 0)
-      return 0;
+  int removeElement(vector<int> &nums, int val)
+  {
+    if (nums.size() == 0) return 0;
     int slow = 0;
     int fast = 0;
     while (fast < nums.size()) {

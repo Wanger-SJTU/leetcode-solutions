@@ -3,11 +3,13 @@
  *
  * [34] 在排序数组中查找元素的第一个和最后一个位置
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  vector<int> searchRange(vector<int> &nums, int target) {
+  vector<int> searchRange(vector<int> &nums, int target)
+  {
     int srt = 0, end = 0;
     int lo = 0, hi = nums.size() - 1;
     while (lo <= hi) {

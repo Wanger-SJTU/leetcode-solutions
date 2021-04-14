@@ -3,11 +3,13 @@
  *
  * [5] 最长回文子串
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  string longestPalindrome(string s) {
+  string longestPalindrome(string s)
+  {
     const int size_s = s.size();
     int max_s = 0, max_l = 0;
     for (int i = 0; i < size_s;) {

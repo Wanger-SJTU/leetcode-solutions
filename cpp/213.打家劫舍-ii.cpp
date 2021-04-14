@@ -3,13 +3,14 @@
  *
  * [213] 打家劫舍 II
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int rob(vector<int> &nums) {
-    if (nums.size() < 2)
-      return nums.size() == 0 ? 0 : nums[0];
+  int rob(vector<int> &nums)
+  {
+    if (nums.size() < 2) return nums.size() == 0 ? 0 : nums[0];
     int res1 = 0;
     int res2 = 0;
     int pre2 = 0;

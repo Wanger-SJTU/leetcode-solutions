@@ -3,11 +3,13 @@
  *
  * [412] Fizz Buzz
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  vector<string> fizzBuzz(int n) {
+  vector<string> fizzBuzz(int n)
+  {
     vector<string> res;
     for (int i = 1; i <= n; ++i) {
       if (i % 15 == 0) {

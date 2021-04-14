@@ -3,11 +3,13 @@
  *
  * [153] 寻找旋转排序数组中的最小值
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  int findMin(vector<int> &nums) {
+  int findMin(vector<int> &nums)
+  {
     int l = 0, r = nums.size() - 1;
     while (l < r) {
       int mid = (r - l) / 2 + l;

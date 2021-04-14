@@ -3,19 +3,22 @@
  *
  * [91] 解码方法
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
- public:
-  int numDecodings(string s) {
+class Solution
+{
+public:
+  int numDecodings(string s)
+  {
     int res = 0;
     // find(s, 0, res);
     return DpFind(s);
   }
 
- private:
+private:
   // dfs TLE
-  void find(string s, int srt, int& res) {
+  void find(string s, int srt, int& res)
+  {
     if (srt >= s.size() - 1) {
       res += 1;
       cout << s.substr(0, srt) << endl;
@@ -31,7 +34,8 @@ class Solution {
     // }
   }
 
-  int DpFind(string s) {
+  int DpFind(string s)
+  {
     int cnt = 0;
     if (s.size() == 0 || s[0] == '0') {
       return cnt;

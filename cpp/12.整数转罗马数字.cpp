@@ -3,16 +3,17 @@
  *
  * [12] 整数转罗马数字
  */
-#include "common.h"
+#include "leetcode.h"
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-  string intToRoman(int num) {
-    string table[4][10] = {
-        {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"},
-        {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"},
-        {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"},
-        {"", "M", "MM", "MMM"}};
+  string intToRoman(int num)
+  {
+    string table[4][10] = {{"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"},
+                           {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"},
+                           {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"},
+                           {"", "M", "MM", "MMM"}};
     string result;
     int count = 0;
     while (num > 0) {
