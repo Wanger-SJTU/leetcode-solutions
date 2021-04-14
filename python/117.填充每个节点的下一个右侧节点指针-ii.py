@@ -15,7 +15,7 @@ class Node:
         self.next = next
 """
 class Solution:
-    def connect(self, root: 'Node') -> 'Node':
+    def connect1(self, root: 'Node') -> 'Node':
         tail = dummy = Node(0, None, None, None)
         node = root
         while node:
@@ -29,6 +29,21 @@ class Solution:
             if not node:
                 tail = dummy
                 node = dummy.next
+        return root
+
+    def connect(self, root: 'Node') -> 'Node':
+        cur = root
+        while cur:
+            tail = dummy = Node(0, None, None, None)
+            while cur:
+                if cur.left:
+                    tail.next = cur.left
+                    tail = tail.next
+                if cur.right:
+                    tail.next = cur.right
+                    tail = tail.next
+                cur = cur.next
+            cur = dummy.next
         return root
 
 # @lc code=end
