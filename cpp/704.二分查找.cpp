@@ -1,3 +1,4 @@
+#include "leetcode.h"
 /*
  * @lc app=leetcode.cn id=704 lang=cpp
  *

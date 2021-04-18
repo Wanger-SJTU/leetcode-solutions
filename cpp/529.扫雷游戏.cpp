@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class Solution {
 public:
     int dir_x[8] = {0, 1, 0, -1, 1, 1, -1, -1};

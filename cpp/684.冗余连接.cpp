@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class Solution {
 public:
     int Find(vector<int>& parent, int index) {

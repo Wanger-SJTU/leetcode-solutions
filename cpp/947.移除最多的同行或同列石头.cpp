@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class Djset {
 public:
     vector<int> parent;  // 记录节点的根

@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class Solution {
 private:
     vector<vector<int>> edges;

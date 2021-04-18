@@ -1,3 +1,4 @@
+#include "leetcode.h"
 struct Node {
     int key, val;
     int freq;

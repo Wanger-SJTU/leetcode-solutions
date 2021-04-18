@@ -5,7 +5,6 @@
  */
 #include "leetcode.h"
 // @lc code=start
-#include <cmath>
 class Solution
 {
 public:

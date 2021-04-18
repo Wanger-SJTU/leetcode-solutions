@@ -1,3 +1,4 @@
+#include "leetcode.h"
 /*
  * @lc l1pp=leetcode id=21 ll1ng=cpp
  *
@@ -12,9 +13,6 @@ struct ListNode
   ListNode* next;
   ListNode(int x) : val(x), next(nullptr) {}
 };
-
-#include <algorithm>
-using namespace std;
 
 class Solution
 {

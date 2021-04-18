@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class Solution {
     bool helper(vector<int>& nums, int pos, int sum) {
         if (0 == sum) return true;

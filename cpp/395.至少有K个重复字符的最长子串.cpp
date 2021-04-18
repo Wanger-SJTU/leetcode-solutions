@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class Solution {
 public:
 int dfs(const string& s, int l, int r, int k) {

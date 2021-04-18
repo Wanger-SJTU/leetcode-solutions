@@ -1,3 +1,4 @@
+#include "leetcode.h"
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -8,18 +9,20 @@
  * };
  */
 
-class Solution {
+class Solution
+{
 public:
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        TreeNode* left = p->val > q->val ? q : p; 
-        TreeNode* right = p->val > q->val ? p : q;
-        if (root->val > left->val && root->val < right->val) {
-            return root;
-        } else if (root->val > right->val) {
-            return lowestCommonAncestor(root->left, p, q);
-        } else if (root->val < left->val){
-            return lowestCommonAncestor(root->right, p, q);
-        }
-        return root;
+  TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q)
+  {
+    TreeNode* left = p->val > q->val ? q : p;
+    TreeNode* right = p->val > q->val ? p : q;
+    if (root->val > left->val && root->val < right->val) {
+      return root;
+    } else if (root->val > right->val) {
+      return lowestCommonAncestor(root->left, p, q);
+    } else if (root->val < left->val) {
+      return lowestCommonAncestor(root->right, p, q);
     }
+    return root;
+  }
 };

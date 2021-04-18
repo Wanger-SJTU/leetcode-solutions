@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class Solution {
 public:
    int calculate(string s) {

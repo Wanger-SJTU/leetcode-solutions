@@ -1,10 +1,9 @@
+#include "leetcode.h"
 /*
  * @lc app=leetcode id=9 lang=cpp
  *
  * [9] Palindrome Number
  */
-#include <string>
-using namespace std;
 
 class Solution
 {

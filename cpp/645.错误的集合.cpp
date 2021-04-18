@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class Solution {
 public:
 	vector<int> findErrorNums(vector<int>& nums) {

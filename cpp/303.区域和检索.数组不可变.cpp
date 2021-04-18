@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class NumArray {
 private:
     vector<int> sums;

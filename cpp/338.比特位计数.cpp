@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class Solution {
 public:
     vector<int> countBits(int num) {

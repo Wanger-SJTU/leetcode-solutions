@@ -1,3 +1,4 @@
+#include "leetcode.h"
 class Solution {
 private:
     const uint32_t M1 = 0x55555555; // 01010101010101010101010101010101
