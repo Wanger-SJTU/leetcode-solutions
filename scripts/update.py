@@ -13,6 +13,22 @@ import shutil
 import pdb
 
 
+cur_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.join(cur_dir, '..')
+
+file_format = {"cpp": ".cpp", "python": ".py", "mysql": ".sql", "go": ".go", "java": ".java",
+                   "c": ".c", "javascript": ".js", "php": ".php", "c#": ".cs", "ruby": ".rb", "swift": ".swift",
+                   "scala": ".scl", "kotlin": ".kt", "rust": ".rs"}
+
+def list_solutions():
+    record_map = {}
+    for item in os.listdir(root_dir):
+        path = os.path.join(root_dir, item)
+        if not os.path.isdir(path) or item == "scripts":
+            continue
+        record_map[item] = [item for item in os.listdir(path) if item.endswith(file_format[item])]
+    return record_map
+
 def TimeStampToTime(timestamp):
     timeStruct = time.localtime(timestamp)
     return time.strftime('%Y-%m-%d %H:%M:%S', timeStruct)
