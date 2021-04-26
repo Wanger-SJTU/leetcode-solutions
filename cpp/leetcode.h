@@ -5,6 +5,7 @@
 #include <map>
 #include <numeric>
 #include <queue>
+#include <random>  //随机数
 #include <set>
 #include <string>
 #include <string_view>  // cpp17
